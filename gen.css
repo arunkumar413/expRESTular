@@ -1,0 +1,27 @@
+.container p{
+    border-radius: 1px;
+    background-color: white;
+    font-family: sans-serif;
+    white-space: pre-wrap;
+    }
+    
+    body{
+        background-color: snow;
+        padding-top: 20px;
+    }
+    
+    .container{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 20px;
+    }
+    
+
+    .container > .input{
+        grid-column: 1/5;
+    }
+
+    .container > .title{
+        grid-column: 1/5;
+    }
+
