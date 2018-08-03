@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Expresstular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="gen.css" />
+    <script src="gen.js"></script>
+</head>
+<body>
+  
+<div class = 'container-fluid'>
+<div class='page-header col-lg-12'>	
+<h2 class='col-lg-12'> ExpRESTular </h2>
+</div>
+<input class = 'col-lg-12 form-control' v-model='message' placeholder="products">
+
+<div class = 'row'>
+<h4 class='col-lg-2'> HTTP request type </h4>
+<h4 class="col-lg-2"> URL </h4>
+<h4 class = 'col-lg-2'> Description </h4>
+<h4 class = 'col-lg-2'> Snippet </h4>
+
+</div>
+
+<div class = 'row'>
+<p class='col-lg-2'> GET</p>
+<p class="col-lg-2"> /{{message}} </p>
+<p class ='col-lg-2'>  Display a list of all {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to display all {{message}}');
+        });</p>	
+</div>
+
+
+<div class = 'row'>
+<p class='col-lg-2'> GET</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Display a specific {{message}} </p>
+<p class=' code col-lg-6'>
+router.get('/{{message}}/:id',function (req,res){
+          console.log('You have reached {{message}}');
+          res.send('You have reached to display a specific {{message}}');
+        });</p>	
+</div>
+
+<div class = 'row'>
+<p class=' col-lg-2'> POST</p>
+<p class="col-lg-2"> /{{message}} </p>
+<p class ='col-lg-2'>  Create a new {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to create a new {{message}}');
+        });</p>	
+</div>
+
+
+<div class = 'row'>
+<p class=' col-lg-2'> PUT</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Update a specific {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}:/id',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to update a specific {{message}}');
+        });</p>	
+</div>
+
+<div class = 'row'>
+<p class=' col-lg-2'> DELETE</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Delete a specific {{message}} </p>
+<p class='code  col-lg-6'>
+router.get('/{{message}}/:id',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to delete a specific {{message}}');
+        });</p>	
+</div>
+
+
+</div>
+        
+
+</body>
+</html>
