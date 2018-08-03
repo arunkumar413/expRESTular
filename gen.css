@@ -1,31 +1,25 @@
-.container p{
+p{
     border-radius: 1px;
     background-color: white;
     font-family: sans-serif;
     white-space: pre-wrap;
+    b
     }
     
     body{
         background-color: snow;
         padding-top: 20px;
     }
-    
-    .container{
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-        grid-column-gap: 20px;
-    }
-    
 
-    .container > .input{
-        grid-column: 1/5;
-    }
 
-    .container > .title{
-        grid-column: 1/5;
-    }
+h2,h4{color:blue;}
 
-    p:hover{
-    	box-shadow: 2px 2px 2px gray;
-    }
+.row:hover{
+border-left: green 5px solid;
+}
 
+
+.row{
+    margin: 10px;
+
+}

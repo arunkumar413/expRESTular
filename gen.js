@@ -3,7 +3,7 @@ $(document).ready(execute);
 
 function execute(){
 const app = new Vue({
-  el: '.container',
+  el: '.container-fluid',
   data: {
     message: 'test'
   }

@@ -15,82 +15,78 @@
 </head>
 <body>
   
-<div class= 'container'>
-    <div class="title">
-        <h1> ExpRESTular </h1>
-    </div>
+<div class = 'container-fluid'>
+<div class='page-header col-lg-12'>	
+<h2 class='col-lg-12'> ExpRESTular </h2>
+</div>
+<input class = 'col-lg-12 form-control' v-model='message' placeholder="products">
 
-    <div class = "input">
-        <input type = 'text' v-model="message" class="form-control" placeholder="products">
-    </div>
-        
-    <div class='req_type'>
-        <h4>Http request type</h4>
-        <p>GET</p>
-        <p>GET</p>
-        <p>POST</p>
-        <p>PUT</p>
-        <p>DELETE</p>
-    </div>
+<div class = 'row'>
+<h4 class='col-lg-2'> HTTP request type </h4>
+<h4 class="col-lg-2"> URL </h4>
+<h4 class = 'col-lg-2'> Description </h4>
+<h4 class = 'col-lg-2'> Snippet </h4>
 
+</div>
 
-    <div class = 'urls'>
-        <h4>Route</h4>
-        <p class="url"> /{{message}} </p>
-        <p class="url"> /{{message}}/:id </p>
-        <p class="url"> /{{message}}/:id </p>
-        <p class="url"> /{{message}}/:id </p>
-        <p class="url"> /{{message}}/:id </p>
-    </div>
-
-    <div class = 'desc'>
-        <h4> Description </h4>
-        <p>   Display a list of all {{message}} </p>
-        <p>   Display a specific {{message}} </p>
-        <p>   Create a new {{message}} </p>
-        <p>   Update a specific {{message}} </p>
-        <p>   Delete  a specific {{message}} </p>
-    </div>
-
-    <div class = 'routes'>
-        <h4> Snippet </h4>
-        <p>
-        router.get('/{{message}}',function (req,res){
+<div class = 'row'>
+<p class='col-lg-2'> GET</p>
+<p class="col-lg-2"> /{{message}} </p>
+<p class ='col-lg-2'>  Display a list of all {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}',function (req,res){
           console.log('You have reached test');
           res.send('You have reached to display all {{message}}');
-        });
-        </p>
-        <p>
-          router.get('/{{message}}/:id',function (req,res){
-          console.log('You have reached display specific id');
-          res.send('You have reached display specific id');
-        });
-        </p>
-        
-        <p>
-        router.post('/{{message}}/:id',function (req,res){ 
-        console.log('You have reached create new {{message}}'); 
-        res.send('You have reached create new {{message}}');
-         });
-        </p>
-        
+        });</p>	
+</div>
 
-        <p>
-        router.put('/{{message}}/:id',function (req,res){ 
-        console.log('You have reached update');
-        res.send('You have reached update'); 
-        });
-        </p>
-        
-        <p>
-        router.delete('/{{message}}/:id',function (req,res){
-        console.log('You have reached Delete');
-        res.send('You have reached Delete'); 
-        });
-        </p>
-        
-    </div>
-        
+
+<div class = 'row'>
+<p class='col-lg-2'> GET</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Display a specific {{message}} </p>
+<p class=' code col-lg-6'>
+router.get('/{{message}}/:id',function (req,res){
+          console.log('You have reached {{message}}');
+          res.send('You have reached to display a specific {{message}}');
+        });</p>	
+</div>
+
+<div class = 'row'>
+<p class=' col-lg-2'> POST</p>
+<p class="col-lg-2"> /{{message}} </p>
+<p class ='col-lg-2'>  Create a new {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to create a new {{message}}');
+        });</p>	
+</div>
+
+
+<div class = 'row'>
+<p class=' col-lg-2'> PUT</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Update a specific {{message}} </p>
+<p class='code col-lg-6'>
+router.get('/{{message}}:/id',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to update a specific {{message}}');
+        });</p>	
+</div>
+
+<div class = 'row'>
+<p class=' col-lg-2'> DELETE</p>
+<p class="col-lg-2"> /{{message}}/:id </p>
+<p class ='col-lg-2'>  Delete a specific {{message}} </p>
+<p class='code  col-lg-6'>
+router.get('/{{message}}/:id',function (req,res){
+          console.log('You have reached test');
+          res.send('You have reached to delete a specific {{message}}');
+        });</p>	
+</div>
+
+
 </div>
         
 
