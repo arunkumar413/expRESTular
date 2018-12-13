@@ -70,7 +70,7 @@ router.post('/{{message}}',function (req,res){
 <p class="col-lg-2"> /{{message}}/:id </p>
 <p class ='col-lg-2'>  Update a specific {{message}} </p>
 <p class='code col-lg-6'>
-router.get('/{{message}}:/id',function (req,res){
+router.put('/{{message}}:/id',function (req,res){
           console.log('You have reached test');
           res.send('You have reached to update a specific {{message}}');
         });</p>	
@@ -81,7 +81,7 @@ router.get('/{{message}}:/id',function (req,res){
 <p class="col-lg-2"> /{{message}}/:id </p>
 <p class ='col-lg-2'>  Delete a specific {{message}} </p>
 <p class='code  col-lg-6'>
-router.get('/{{message}}/:id',function (req,res){
+router.delete('/{{message}}/:id',function (req,res){
           console.log('You have reached test');
           res.send('You have reached to delete a specific {{message}}');
         });</p>	
